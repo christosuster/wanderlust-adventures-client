@@ -2,7 +2,7 @@
 
 Welcome to Wanderlust Adventures, where wanderers unite to explore extraordinary destinations, create lasting memories, and connect with like-minded adventurers. Embark on your dream escape through our handpicked selection of unique travel experiences that cater to every type of traveler.
 
-## Live Site: https://main--glistening-bombolone-5a2646.netlify.app/home
+## Live Site: https://main--glistening-bombolone-5a2646.netlify.app
 
 ## Features and Functionality
 
