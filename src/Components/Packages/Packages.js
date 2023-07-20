@@ -5,7 +5,7 @@ import "./Packages.css";
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://wanderlust-adventures-server.onrender.com/packages")
       .then((res) => res.json())
       .then((data) => setPackages(data));
   }, []);
@@ -13,10 +13,13 @@ const Packages = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      //   const url = `http://localhost:5000/users/${id}`;
-      fetch(`http://localhost:5000/packages/${id}`, {
-        method: "DELETE",
-      })
+      //   const url = `https://wanderlust-adventures-server.onrender.com/users/${id}`;
+      fetch(
+        `https://wanderlust-adventures-server.onrender.com/packages/${id}`,
+        {
+          method: "DELETE",
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount > 0) {

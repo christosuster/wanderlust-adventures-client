@@ -12,12 +12,14 @@ const AddToDB = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/packages", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Data Added.");
-        reset();
-      }
-    });
+    axios
+      .post("https://wanderlust-adventures-server.onrender.com/packages", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Data Added.");
+          reset();
+        }
+      });
   };
   return (
     <div className="container my-5 py-3">

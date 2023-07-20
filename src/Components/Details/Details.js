@@ -23,18 +23,20 @@ const Details = () => {
   const onSubmit = (data) => {
     data.package = itemDetail[0];
     console.log(data);
-    axios.post("http://localhost:5000/booking", data).then((res) => {
-      if (res.data.insertedId) {
-        alert(
-          "Booking Added. You can see your booking in My Booking or Dashboard page. Thank you"
-        );
-        reset();
-      }
-    });
+    axios
+      .post("https://wanderlust-adventures-server.onrender.com/booking", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert(
+            "Booking Added. You can see your booking in My Booking or Dashboard page. Thank you"
+          );
+          reset();
+        }
+      });
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://wanderlust-adventures-server.onrender.com/packages")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch();

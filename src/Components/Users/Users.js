@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Users = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://wanderlust-adventures-server.onrender.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch();
@@ -13,8 +13,8 @@ const Users = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      //   const url = `http://localhost:5000/users/${id}`;
-      fetch(`http://localhost:5000/users/${id}`, {
+      //   const url = `https://wanderlust-adventures-server.onrender.com/users/${id}`;
+      fetch(`https://wanderlust-adventures-server.onrender.com/users/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

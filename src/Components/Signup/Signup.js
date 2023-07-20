@@ -72,7 +72,7 @@ const Signup = () => {
         const newUser = { name, email };
         setError("");
         setUserName();
-        fetch("http://localhost:5000/users", {
+        fetch("https://wanderlust-adventures-server.onrender.com/users", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(newUser),

@@ -20,7 +20,7 @@ const Signin = () => {
   const auth = getAuth();
   const redirect_uri = location.state?.from || "/home";
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://wanderlust-adventures-server.onrender.com/users")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -42,7 +42,7 @@ const Signin = () => {
           }
         }
         if (flag === 0) {
-          fetch("http://localhost:5000/users", {
+          fetch("https://wanderlust-adventures-server.onrender.com/users", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(newUser),

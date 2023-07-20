@@ -6,7 +6,7 @@ import "./Package.css";
 const Package = (props) => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://wanderlust-adventures-server.onrender.com/packages")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch();
