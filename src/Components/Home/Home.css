@@ -1,0 +1,39 @@
+.heading {
+  font-size: 70px;
+  font-weight: 1000;
+}
+.logoHeading {
+  font-weight: 700;
+  font-size: 100px;
+}
+.guidImg {
+  margin-top: 20px;
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .logoHeading {
+    font-size: 70px;
+  }
+}
+
+.guide-card > .card-body {
+  min-height: auto;
+}
+
+.users-page {
+  min-height: 90vh;
+}
+
+.my-bookings {
+}
+
+.register-page,
+.signin-page {
+  min-height: 85vh;
+}
+
+.btn {
+  margin: 3px;
+}

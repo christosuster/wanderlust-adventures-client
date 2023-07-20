@@ -1,0 +1,26 @@
+.table {
+  text-align: center;
+  margin: 20px auto;
+  overflow-x: scroll;
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+th {
+  font-size: 20px;
+}
+
+td > h4 {
+  font-size: 20px;
+}
+
+.all-bookings {
+  min-height: 90vh;
+}

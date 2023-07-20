@@ -1,0 +1,22 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.package-img {
+  height: 20rem;
+  object-fit: cover;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.link:hover {
+  color: coral;
+  font-weight: 900;
+}
+
+.card-body {
+  min-height: 200px;
+}

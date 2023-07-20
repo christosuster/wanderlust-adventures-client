@@ -1,0 +1,19 @@
+.showcase {
+  min-height: 300px;
+  background: url(https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg)
+    center center / cover;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+}
